@@ -1,5 +1,7 @@
 package net.alanchika.tutorialmod;
 
+import net.alanchika.tutorialmod.block.ModBlocks;
+import net.alanchika.tutorialmod.item.ModItemGroups;
 import net.alanchika.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,8 +15,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 }
